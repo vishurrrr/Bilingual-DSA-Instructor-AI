@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Instructor | Premium AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Prism.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-code-branch"></i>
+                <h1>DSA Instructor</h1>
+            </div>
+            <p class="subtitle">Master Data Structures & Algorithms with AI</p>
+        </header>
+
+        <main class="chat-container">
+            <div id="chat-messages" class="messages-area">
+                <div class="message ai-message">
+                    <div class="avatar"><i class="fa-solid fa-robot"></i></div>
+                    <div class="text">Hello! I am your DSA Instructor. Ask me anything about Data Structures and
+                        Algorithms.</div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="chat-form">
+                    <div class="input-wrapper">
+                        <!-- Language Selector -->
+                        <select id="lang-select" class="lang-select" title="Choose Language">
+                            <option value="en-US">🇺🇸 Eng</option>
+                            <option value="hi-IN">🇮🇳 Hin</option>
+                        </select>
+                        <input type="text" id="user-input" placeholder="Ask a question about arrays, trees, graphs..."
+                            autocomplete="off">
+                        <button type="button" id="mic-btn" class="mic-btn">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                        <button type="submit" id="send-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <!-- Prism.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
